@@ -1,0 +1,8 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home2/kekltzmy/public_html/wp-content/plugins/krexio-careers/
+    - /bin/mkdir -p $DEPLOYPATH
+    - /bin/cp -r krexio-careers.php $DEPLOYPATH
+    - /bin/cp -r includes $DEPLOYPATH
+    - /bin/cp -r assets $DEPLOYPATH
