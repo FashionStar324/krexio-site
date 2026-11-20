@@ -17,6 +17,7 @@ define( 'KREXIO_CAREERS_DB_VERSION', '1.1' );
 require_once KREXIO_CAREERS_PATH . 'includes/class-job-post-type.php';
 require_once KREXIO_CAREERS_PATH . 'includes/class-application-form.php';
 require_once KREXIO_CAREERS_PATH . 'includes/class-admin-applications.php';
+require_once KREXIO_CAREERS_PATH . 'includes/class-banner-styling.php';
 
 function krexio_careers_applications_table() {
 	global $wpdb;
@@ -116,6 +117,7 @@ add_action( 'plugins_loaded', function () {
 	Krexio_Job_Post_Type::init();
 	Krexio_Application_Form::init();
 	Krexio_Admin_Applications::init();
+	Krexio_Banner_Styling::init();
 } );
 
 add_action( 'wp_enqueue_scripts', function () {
